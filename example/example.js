@@ -23,7 +23,7 @@ require('little-pouch-db')( new Pouch('pouch-test') )
     var docs = resp.rows.map(function(row) {
       return row.doc;
     });
-    setInterval(updateRandomDoc.bind(this, docs), 1000);
+    setInterval(updateRandomDoc.bind(this, docs), 3000);
   })
 ;
 
